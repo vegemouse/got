@@ -1,0 +1,147 @@
+
+@font-face{
+  font-family: "GOT";
+  src:  url('fonts/got-webfont.woff') format('woff'),
+        url('fonts/got-webfont.woff2') format('woff2'),
+        url('fonts/GOT.ttf')  format('truetype');
+}
+
+/* For testing only */
+
+/**:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}*/
+
+/* End for testing */
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+body {
+  margin: 0;
+  background-color: #1f2b39;
+  color: white;
+  font-family: Georgia;
+}
+
+#container {
+  width: 100%;
+}
+
+#header {
+  background-image: url("../img/throne.jpg");
+  background-position: center;
+  height: 40vh;
+  background-size: cover;
+  position: relative;
+}
+
+h1 {
+  font-family: "GOT", fantasy;
+  letter-spacing: 0.7em;
+  text-align: center;
+  color: #EEE;
+  text-shadow: 2px 2px 2px black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img {
+  max-width: 100%;
+}
+
+aside {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+aside ul {
+  list-style-type: none;
+}
+
+aside ul li {
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+aside ul li a{
+  color: #FFF;
+  text-decoration: none;
+  letter-spacing: 0.3em;
+}
+
+aside h3 {
+  text-align: center;
+  font-size: 2em;
+  font-family: "GOT", fantasy;
+}
+
+#houses {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin: 10px;
+}
+
+#houses img {
+  width: 33.3%;
+  filter: grayscale(80%);
+  transition: filter 300ms;
+}
+
+#houses img:hover {
+  cursor: pointer;
+  filter: grayscale(0%);
+}
+
+main {
+  padding: 40px 15px;
+}
+
+main h2 {
+  font-family: "GOT", fantasy;
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: 20px;
+}
+
+main p {
+  padding-bottom: 20px;
+}
+
+main p:first-letter {
+  float: left;
+  font-size: 2.7em;
+  font-family: "GOT", fantasy;
+  padding-right: 6px;
+  padding-top: 5px;
+  padding-bottom: 0;
+}
+
+main p:after {
+  clear: both;
+  display: block;
+  content: " ";
+}
+footer {
+  margin: 10px;
+  text-align: center;
+}
+footer p {
+  border-top: 1px solid white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
