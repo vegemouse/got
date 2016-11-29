@@ -44,6 +44,10 @@ body {
   position: relative;
 }
 
+#hidden-nav {
+  display: none;
+}
+
 h1 {
   font-family: "GOT", fantasy;
   letter-spacing: 0.3em;
@@ -229,16 +233,37 @@ footer p {
 
 }
 
-@media screen and (min-width: 1080px) {
-  #container {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
+@media screen and (min-width: 1900px) {
+
+  body {
+    height: 191vh;
   }
 
+  #container {
+    width: 70%;
+    position: fixed ;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+  }
   aside {
     border-radius: 10px;
+  }
+
+  aside ul {
+    display: none;
+  }
+
+  #houses {
+    border-top: 0;
   }
 
   main {
@@ -258,6 +283,52 @@ footer p {
     padding-right: 6px;
     padding-top: 25px;
     padding-bottom: 0;
+  }
+
+  #hidden-nav {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 7.5vh;
+    background-color: #1f2b39;
+    z-index: 3;
+    display: block;
+  }
+
+  #hidden-nav ul {
+    width: 80vw;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+
+  }
+
+  #hidden-nav li {
+    display: inline;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin: 0;
+    width: auto;
+    font-family: "GOT", fantasy;
+    letter-spacing: .5em;
+    transition: letter-spacing 400ms, color 400ms;
+
+  }
+
+  #hidden-nav li:hover {
+    letter-spacing: 1em;
+  }
+
+  #hidden-nav li a {
+    color: white;
+    font-size: 1.75em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 400ms;
+  }
+
+  #hidden-nav li a:hover {
+    color: #aaa;
   }
 
 }
