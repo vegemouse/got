@@ -1,4 +1,4 @@
-# Nutritian Fact page
+# Game of Thrones landing page
 ### by Max Cady and Suzi Rubino
 
 ## Description
